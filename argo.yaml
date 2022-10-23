@@ -1,0 +1,15 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Workflow
+metadata:
+  name: terraform-shim-hello
+spec:
+  arguments:
+    parameters:
+      - name: terraform-docker-image
+        value: 'joshvanaartsen/terraform:1.0.1'
+      - name: repo_url
+        value: 'https://github.com/JVanAartsen/tf-hello-world.git'
+      - name: relative_working_directory
+        value: ''
+  workflowTemplateRef:
+    name: terraform
