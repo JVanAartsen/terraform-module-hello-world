@@ -6,7 +6,7 @@ spec:
   arguments:
     parameters:
       - name: terraform-docker-image
-        value: 'joshvanaartsen/terraform:1.0.1'
+        value: 'joshvanaartsen/terraform:1.0.3'
       - name: repo_url
         value: 'https://github.com/JVanAartsen/tf-hello-world.git'
       - name: relative_working_directory
